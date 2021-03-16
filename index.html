@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>360&deg; BigGAN World</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="./sample.js"></script>
+</head>
+ 
+<body>
+    <div id="text-box">
+        <div id="text">Loading...</div>
+    </div>
+    <a-scene>
+        <a-assets>
+            <video id="video" src="./resources/biggan.mp4" 
+            preload="auto" loop="true" webkit-playsinline playsinline></video>
+        </a-assets>
+        <a-videosphere id="videosphere" src='#video'></a-videosphere>
+    </a-scene>
+</body>
+ 
+</html>
